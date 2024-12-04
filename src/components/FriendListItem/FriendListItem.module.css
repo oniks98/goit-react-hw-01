@@ -1,0 +1,20 @@
+.imageBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.online {
+  color: green;
+}
+
+.offline {
+  color: red;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 700;
+}

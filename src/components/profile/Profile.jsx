@@ -15,7 +15,7 @@ function Profile({
     <div className={css.profile}>
       <div className={css.imageContainer}>
         <img
-          src={image || defaultImage} // Если image не передан или равен null/undefined
+          src={image || defaultImage}
           alt="User avatar"
           className={css.image}
         />

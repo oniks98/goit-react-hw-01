@@ -1,0 +1,43 @@
+.common {
+  padding: 10px;
+  border: 1px solid #000;
+  word-wrap: break-word;
+}
+
+.table {
+  margin: auto;
+  width: 450px;
+  border-collapse: collapse;
+  text-align: center;
+  table-layout: fixed;
+}
+
+.tableTitle {
+  background-color: #000;
+  color: #fff;
+}
+
+.itemTh {
+  composes: common;
+}
+
+.itemTd {
+  composes: common;
+}
+
+.item:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.item:nth-child(even) {
+  background-color: #fff;
+}
+
+.itemTd:first-child {
+  text-align: left;
+  padding-left: 35px;
+}
+.item:hover {
+  background-color: #d3d3d3;
+  transition: background-color 0.3s ease-in-out;
+}

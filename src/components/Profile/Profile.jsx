@@ -11,6 +11,11 @@ function Profile({
   const defaultImage =
     'https://cdn-icons-png.flaticon.com/512/1077/1077012.png';
 
+  // Для обробки помилки завантаження фото самим браузером
+  const handleImageError = event => {
+    event.target.src = defaultImage;
+  };
+
   return (
     <div className={css.profile}>
       <div className={css.imageContainer}>
@@ -18,6 +23,8 @@ function Profile({
           src={image || defaultImage}
           alt="User avatar"
           className={css.image}
+          // Обробник помилки завантаження
+          onError={handleImageError}
         />
         <p className={css.name}>{name}</p>
         <p className={css.dscr}>@{tag}</p>
